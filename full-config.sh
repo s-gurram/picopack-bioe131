@@ -163,6 +163,40 @@ echo "All sequences and tracks successfully added to the combined assembly in JB
 
 echo "All assemblies and tracks added to JBrowse2 successfully!"
 
+
+
+
+
+# Creating .paf to compare Coxsackievirus A24 and Enterovirus 70
+minimap2 ed70.fa c24.fa > ed70_c24.paf
+rm $APACHE_ROOT/jbrowse2/ed70_c24.paf
+jbrowse add-track ed70_c24.paf --trackType SyntenyTrack --assemblyNames "Enterovirus 70,Coxsackievirus A24" --load copy --out $APACHE_ROOT/jbrowse2
+
+# Creating .paf to compare Coxsackievirus A6 and Coxsackievirus A16
+minimap2 c6.fa c16.fa > c6_c16.paf
+rm $APACHE_ROOT/jbrowse2/c6_c16.paf
+jbrowse add-track c6_c16.paf --trackType SyntenyTrack --assemblyNames "Coxsackievirus A6,Coxsackievirus A16" --load copy --out $APACHE_ROOT/jbrowse2
+
+# Creating .paf to compare Echovirus 13 and Echovirus 18
+minimap2 ec13.fa ec18.fa > ec13_ec18.paf
+rm $APACHE_ROOT/jbrowse2/ec13_ec18.paf
+jbrowse add-track ec13_ec18.paf --trackType SyntenyTrack --assemblyNames "Echovirus 13,Echovirus 18" --load copy --out $APACHE_ROOT/jbrowse2
+
+
+# Creating .paf to compare Echovirus 13 and Echovirus 30
+minimap2 ec13.fa ec30.fa > ec13_ec30.paf
+rm $APACHE_ROOT/jbrowse2/ec13_ec30.paf
+jbrowse add-track ec13_ec30.paf --trackType SyntenyTrack --assemblyNames "Echovirus 13,Echovirus 30" --load copy --out $APACHE_ROOT/jbrowse2
+
+# Creating .paf to compare Echovirus 18 and Echovirus 30
+minimap2 ec18.fa ec30.fa > ec18_ec30.paf
+rm $APACHE_ROOT/jbrowse2/ec18_ec30.paf
+jbrowse add-track ec18_ec30.paf --trackType SyntenyTrack --assemblyNames "Echovirus 18,Echovirus 30" --load copy --out $APACHE_ROOT/jbrowse2
+
+
+
+
+
 # Change to the $APACHE_ROOT/jbrowse2 directory
 cd "$APACHE_ROOT/jbrowse2" || { echo "Error: $APACHE_ROOT/jbrowse2 directory not found."; exit 1; }
 
@@ -204,10 +238,6 @@ fi
 
 echo "Plugins added successfully to $CONFIG_FILE"
 
-
-
-
-
 # Check if minimap2 is installed
 if which minimap2 &>/dev/null; then
   echo "Minimap2 is already installed."
@@ -226,24 +256,3 @@ else
     echo "Minimap2 installation complete."
   fi
 fi
-
-# Creating .paf to compare Coxsackievirus A24 and Enterovirus 70
-minimap2 -a ed70.fa c24.fa > ed70_c24.paf
-jbrowse add-track ed70_c24.paf --trackType SyntenyTrack --assemblyNames "Enterovirus 70,Coxsackievirus A24" --load copy --out $APACHE_ROOT/jbrowse2
-
-# Creating .paf to compare Coxsackievirus A6 and Coxsackievirus A16
-minimap2 -a c6.fa c16.fa > c6_c16.paf
-jbrowse add-track c6_c16.paf --trackType SyntenyTrack --assemblyNames "Coxsackievirus A6,Coxsackievirus A16" --load copy --out $APACHE_ROOT/jbrowse2
-
-# Creating .paf to compare Echovirus 13 and Echovirus 18
-minimap2 -a ec13.fa ec18.fa > ec13_ec18.paf
-jbrowse add-track ec13_ec18.paf --trackType SyntenyTrack --assemblyNames "Echovirus 13,Echovirus 18" --load copy --out $APACHE_ROOT/jbrowse2
-
-
-# Creating .paf to compare Echovirus 13 and Echovirus 30
-minimap2 -a ec13.fa ec30.fa > ec13_ec30.paf
-jbrowse add-track ec13_ec30.paf --trackType SyntenyTrack --assemblyNames "Echovirus 13,Echovirus 30" --load copy --out $APACHE_ROOT/jbrowse2
-
-# Creating .paf to compare Echovirus 18 and Echovirus 30
-minimap2 -a ec18.fa ec30.fa > ec18_ec30.paf
-jbrowse add-track ec18_ec30.paf --trackType SyntenyTrack --assemblyNames "Echovirus 18,Echovirus 30" --load copy --out $APACHE_ROOT/jbrowse2
