@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioE131 Final Project</title>
     <style>
         body {
@@ -21,14 +22,35 @@
             line-height: 1.6;
             margin: 20px auto;
             max-width: 800px;
-            text-align: center;
         }
 
+        .button-container {
+            margin-top: 40px;
+        }
+
+        a.button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <h1>PicoPack</h1>
-    <p>a database installer for prominent outbreak-causing enteroviruses reported by the CDC</p>
+    <p>A database installer for prominent outbreak-causing enteroviruses reported by the CDC.</p>
 
+    <div class="button-container">
+        <a class="button" href="./jbrowse2/index.html" target="_blank">Open JBrowse 2</a>
+    </div>
 </body>
 </html>
+
