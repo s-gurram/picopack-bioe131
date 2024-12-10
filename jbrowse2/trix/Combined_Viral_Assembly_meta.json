@@ -1,0 +1,33 @@
+{
+  "dateCreated": "2024-12-10T07:27:55.010Z",
+  "tracks": [
+    {
+      "trackId": "combined_genomes.gff",
+      "attributesIndexed": [
+        "Name",
+        "ID"
+      ],
+      "excludedTypes": [
+        "CDS",
+        "exon"
+      ],
+      "adapterConf": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "combined_genomes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "combined_genomes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      }
+    }
+  ],
+  "assemblyNames": [
+    "Combined_Viral_Assembly"
+  ]
+}

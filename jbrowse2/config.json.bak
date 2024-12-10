@@ -1,0 +1,603 @@
+{
+  "assemblies": [
+    {
+      "name": "Enterovirus 70",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Enterovirus 70-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "ed70.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "ed70.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "Coxsackievirus A24",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Coxsackievirus A24-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "c24.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "c24.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "Coxsackievirus A24"
+      ]
+    },
+    {
+      "name": "Coxsackievirus A16",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Coxsackievirus A16-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "c16.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "c16.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "Coxsackievirus A16"
+      ]
+    },
+    {
+      "name": "Coxsackievirus A6",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Coxsackievirus A6-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "c6.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "c6.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "Coxsackievirus A6"
+      ]
+    },
+    {
+      "name": "Echovirus 13",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Echovirus 13-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "ec13.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "ec13.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "Echovirus 13"
+      ]
+    },
+    {
+      "name": "Echovirus 18",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Echovirus 18-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "ec18.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "ec18.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "Echovirus 18"
+      ]
+    },
+    {
+      "name": "Echovirus 30",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Echovirus 30-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "ec30.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "ec30.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "Echovirus 30"
+      ]
+    },
+    {
+      "name": "Combined_Viral_Assembly",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Combined_Viral_Assembly-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "combined_genomes.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "combined_genomes.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  },
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "ed70.gff",
+      "name": "Enterovirus 70",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "ed70.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "ed70.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Enterovirus 70"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "c24.gff",
+      "name": "Coxsackievirus A24",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "c24.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "c24.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Coxsackievirus A24"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "c16.gff",
+      "name": "Coxsackievirus A16",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "c16.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "c16.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Coxsackievirus A16"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "c6.gff",
+      "name": "Coxsackievirus A6",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "c6.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "c6.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Coxsackievirus A6"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "ec13.gff",
+      "name": "Echovirus 13",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "ec13.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "ec13.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Echovirus 13"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "ec18.gff",
+      "name": "Echovirus 18",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "ec18.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "ec18.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Echovirus 18"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "ec30.gff",
+      "name": "Echovirus 30",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "ec30.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "ec30.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Echovirus 30"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "combined_genomes.gff",
+      "name": "Combined_Viral_Assembly",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "combined_genomes.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "combined_genomes.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Combined_Viral_Assembly"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "ed70_c24",
+      "name": "ed70_c24",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "ed70_c24.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "Enterovirus 70",
+          "Coxsackievirus A24"
+        ]
+      },
+      "assemblyNames": [
+        "Enterovirus 70",
+        "Coxsackievirus A24"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "c6_c16",
+      "name": "c6_c16",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "c6_c16.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "Coxsackievirus A6",
+          "Coxsackievirus A16"
+        ]
+      },
+      "assemblyNames": [
+        "Coxsackievirus A6",
+        "Coxsackievirus A16"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "ec13_ec18",
+      "name": "ec13_ec18",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "ec13_ec18.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "Echovirus 13",
+          "Echovirus 18"
+        ]
+      },
+      "assemblyNames": [
+        "Echovirus 13",
+        "Echovirus 18"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "ec13_ec30",
+      "name": "ec13_ec30",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "ec13_ec30.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "Echovirus 13",
+          "Echovirus 30"
+        ]
+      },
+      "assemblyNames": [
+        "Echovirus 13",
+        "Echovirus 30"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "ec18_ec30",
+      "name": "ec18_ec30",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "ec18_ec30.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "Echovirus 18",
+          "Echovirus 30"
+        ]
+      },
+      "assemblyNames": [
+        "Echovirus 18",
+        "Echovirus 30"
+      ]
+    }
+  ],
+  "aggregateTextSearchAdapters": [
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Enterovirus 70-index",
+      "ixFilePath": {
+        "uri": "trix/Enterovirus 70.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Enterovirus 70.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Enterovirus 70_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Enterovirus 70"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Coxsackievirus A24-index",
+      "ixFilePath": {
+        "uri": "trix/Coxsackievirus A24.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Coxsackievirus A24.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Coxsackievirus A24_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Coxsackievirus A24"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Coxsackievirus A16-index",
+      "ixFilePath": {
+        "uri": "trix/Coxsackievirus A16.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Coxsackievirus A16.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Coxsackievirus A16_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Coxsackievirus A16"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Coxsackievirus A6-index",
+      "ixFilePath": {
+        "uri": "trix/Coxsackievirus A6.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Coxsackievirus A6.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Coxsackievirus A6_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Coxsackievirus A6"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Echovirus 13-index",
+      "ixFilePath": {
+        "uri": "trix/Echovirus 13.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Echovirus 13.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Echovirus 13_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Echovirus 13"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Echovirus 18-index",
+      "ixFilePath": {
+        "uri": "trix/Echovirus 18.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Echovirus 18.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Echovirus 18_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Echovirus 18"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Echovirus 30-index",
+      "ixFilePath": {
+        "uri": "trix/Echovirus 30.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Echovirus 30.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Echovirus 30_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Echovirus 30"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Combined_Viral_Assembly-index",
+      "ixFilePath": {
+        "uri": "trix/Combined_Viral_Assembly.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Combined_Viral_Assembly.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Combined_Viral_Assembly_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Combined_Viral_Assembly"
+      ]
+    }
+  ]
+}
